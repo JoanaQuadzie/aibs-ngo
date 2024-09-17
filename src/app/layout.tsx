@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +31,26 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="border-b border-b-primary px-4 py-2">
+          <nav className="flex justify-between items-center">
+            <div>
+              <Image src="/images/Witen.png" alt="logo" height={100} width={100}/> 
+            </div>
+            <ul className="flex gap-5">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Projects</li>
+              <li>Contact Us</li>
+            </ul>
+
+           <Button className="bg-primary-dark text-white rounded-2xl">Donate Now</Button>
+
+          </nav>
+        </header>
         {children}
+        <footer>
+          Footer to be done
+        </footer>
       </body>
     </html>
   );
