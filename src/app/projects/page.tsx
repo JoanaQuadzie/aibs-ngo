@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { Project } from "@/lib/types";
 import ProjectCard from "@/components/project-card";
 
