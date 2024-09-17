@@ -3,7 +3,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { cn } from "@/lib/utils";
+import {Inter} from 'next/font/google'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,6 +18,13 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const fontSerif = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-serif",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,29 +38,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header className="border-b border-b-primary px-4 py-2">
-          <nav className="flex justify-between items-center">
-            <div>
-              <Image src="/images/Witen.png" alt="logo" height={100} width={100}/> 
-            </div>
-            <ul className="flex gap-5">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Projects</li>
-              <li>Contact Us</li>
-            </ul>
-
-           <Button className="bg-primary-dark text-white rounded-2xl">Donate Now</Button>
-
-          </nav>
-        </header>
+      <body className={cn(fontSerif.variable)}>
+        <Header />
         {children}
-        <footer>
-          Footer to be done
-        </footer>
+        <Footer />
       </body>
     </html>
   );

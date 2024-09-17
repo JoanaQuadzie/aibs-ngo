@@ -12,15 +12,15 @@ export default function ProjectCard(props: Project) {
             <Image
               className="border rounded-3xl"
               src={props.imageUrl}
-              height={300}
-              width={300}
+              height={400}
+              width={400}
               alt="about image"
             />
 
           </div>
 
           <div className="spa">
-            <p className="font-bold text-black tracking-wider">
+            <p className="font-bold text-black">
              {props.title}
             </p>
             <p>{props.description}

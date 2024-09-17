@@ -53,7 +53,7 @@ export default function ProjectPage() {
         PROJECTS
       </h1>
 
-     <section className="grid grid-cols-2 gap-10 px-10 py-14">
+     <section className="grid sm:grid-row md:grid-cols-3 md:gap-20 gap-10 px-10 py-14">
      {PROJECT_LIST.map((project) => (
         <ProjectCard
           key={project.title}

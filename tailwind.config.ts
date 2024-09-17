@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
     darkMode: ["class"],
@@ -8,6 +9,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+  	fontFamily: {
+  		heading: ["var(--font-serif)", ...fontFamily.serif],
+  		body: ["var(--font-serif)", ...fontFamily.sans]
+  	},
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
@@ -21,25 +26,24 @@ const config: Config = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'var(--primary)',
+  				DEFAULT: 'var(--primary)'
   			},
-
-			'primary-dark': {
-				DEFAULT: 'var(--primary-dark)'
-			},
+  			'primary-dark': {
+  				DEFAULT: 'var(--primary-dark)'
+  			},
   			secondary: {
-  				DEFAULT: 'var(--secondary)',
+  				DEFAULT: 'var(--secondary)'
   			},
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-				DEFAULT: 'var(--accent)'
-			},
-  			tertiary:  {
-				DEFAULT: 'var(--tertiary)'
-			},
+  				DEFAULT: 'var(--accent)'
+  			},
+  			tertiary: {
+  				DEFAULT: 'var(--tertiary)'
+  			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
@@ -59,6 +63,28 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
   },

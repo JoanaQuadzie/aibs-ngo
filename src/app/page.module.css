@@ -3,3 +3,32 @@
     background-size: cover;
     background-position:center;
 }
+
+
+.featuredProject1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo4.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.featuredProject2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo3.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.featuredProject3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo2.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.featuredProject4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo6.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.featuredProject5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo1.jpg);
+    background-size: cover;
+    background-position:center;
+}

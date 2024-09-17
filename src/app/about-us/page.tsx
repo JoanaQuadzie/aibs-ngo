@@ -15,7 +15,7 @@ export default function AboutUsPage() {
       </div>
 
       <section className="flex justify-center py-20 border-b">
-        <p className="w-1/2 text-center font-serif">
+        <p className="w-1/2 md:text-xl text-center font-serif">
           At WiTEN, we're concerned with addressing gender imbalance as many
           women face challenges like limited access to mentorship, educational
           resources or opportunities. Also, we seek to promote economic
@@ -25,15 +25,15 @@ export default function AboutUsPage() {
         </p>
       </section>
 
-      <div className="flex items-center gap-10 py-20 px-14">
-        <p className="w-1/2 font-serif">
+      <div className="flex flex-col items-center md:flex-row md:justify-center gap-10 py-20 px-14">
+        <p className="md:w-1/2 mb-10 text-center md:text-xl font-serif">
           To provide support, mentorship, and resources for women aspiring to
           break into tech and entrepreneurship, helping them overcome barriers
           and excel in male-dominated industries.
         </p>
 
         <Image
-          className="border rounded-3xl"
+          className="border rounded-3xl "
           src="/images/ourmission.jpg"
           height={300}
           width={300}
@@ -41,7 +41,7 @@ export default function AboutUsPage() {
         />
       </div>
 
-      <div className="flex items-center gap-10 py-20 px-14">
+      <div className="flex flex-col items-center md:flex-row md:justify-center gap-10 py-20 px-14">
         <Image
           className="border rounded-3xl"
           src="/images/ourvalues.jpg"
@@ -50,7 +50,7 @@ export default function AboutUsPage() {
           alt="about image"
         />
 
-        <ul className="list-disc space-y-5 w-1/2 font-serif">
+        <ul className=" list-disc space-y-5 md:w-1/2 font-serif md:text-xl ">
           <li>
             Empowerment: We believe in equipping women with the tools,
             knowledge, and confidence they need to thrive in tech and
@@ -75,7 +75,7 @@ export default function AboutUsPage() {
           "py-20 px-14 text-white flex justify-center"
         )}
       >
-        <p className="text-center font-serif">
+        <p className="text-center font-serif md:text-xl">
           Our story began with a simple realization: despite the growing tech
           industry, women remain significantly underrepresented. Inspired by
           personal experiences in the field and the challenges faced by women
@@ -92,7 +92,7 @@ export default function AboutUsPage() {
         </p>
       </div>
 
-      <section className="grid grid-cols-2 gap-10 py-20 px-14">
+      <section className="grid md:grid-cols-3 gap-10 py-20 px-5 md:px-14">
         <article className="border rounded-xl bg-white p-8 space-y-8">
           <div className="flex justify-center">
             <Image
@@ -104,7 +104,7 @@ export default function AboutUsPage() {
             />
           </div>
 
-          <div className="spa">
+          <div className="text-center">
             <p className="font-bold text-black font-serif">
               ALFRED DOH-NANI
             </p>
@@ -123,7 +123,7 @@ export default function AboutUsPage() {
             />
           </div>
 
-          <div className="spa">
+          <div className="text-center">
             <p className="font-bold text-black font-serif">
               JOANA QUADZIE
             </p>
@@ -142,7 +142,7 @@ export default function AboutUsPage() {
             />
           </div>
 
-          <div className="spa">
+          <div className="text-center">
             <p className="font-bold text-black font-serif">
               JAYSON COLEMAN
             </p>
